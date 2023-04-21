@@ -22,7 +22,7 @@ void sigint_handler(int sig) {
 
 //main function
 int main(){
-    //register the signal handler function for SIGINT 
+    //register the signal handler function for SIGINT / call signal handler function
     signal (SIGINT, sigint_handler);
 
     //create pipes for inter-process communication
